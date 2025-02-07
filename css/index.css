@@ -10914,8 +10914,8 @@ hr.divider-light {
 }
 
 header.masthead {
-  padding-top: 13rem;
-  padding-bottom: calc(13rem - 4.5rem);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background: url("../assets/img/portada1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -10927,7 +10927,7 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
+    height: 50vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
