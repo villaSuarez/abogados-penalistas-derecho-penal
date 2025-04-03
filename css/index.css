@@ -130,6 +130,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
+  color: #EEDFC5;
   font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
@@ -246,7 +247,7 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: var(--bs-white);
   text-decoration: underline;
 }
 a:hover {
@@ -256,6 +257,11 @@ a:hover {
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
+}
+
+li {
+  --bs-text-opacity: 1;
+  color: #6c757d !important;
 }
 
 pre,
@@ -1398,6 +1404,10 @@ progress {
   .g-lg-5,
   .gy-lg-5 {
     --bs-gutter-y: 3rem;
+  }
+  .img-fluid {
+    max-width: 50%;
+    height: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -10838,6 +10848,7 @@ body {
 }
 
 .page-section {
+  background-color: var(--bs-link-color);
   padding: 8rem 0;
 }
 
@@ -10914,6 +10925,7 @@ hr.divider-light {
 }
 
 header.masthead {
+  height: 100vh; 
   padding-top: 6rem;
   padding-bottom: 6rem;
   background: url("../assets/img/portada.jpeg");
@@ -10927,7 +10939,6 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 50vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
