@@ -37,7 +37,10 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link
             href="#inicio"
-            className="font-serif text-xl md:text-2xl font-semibold tracking-tight text-foreground"
+            className={cn(
+              "font-serif text-xl md:text-2xl font-semibold tracking-tight transition-colors",
+              isScrolled ? "text-foreground" : "text-white"
+            )}
           >
             Villa Suárez Abogados
           </Link>
@@ -48,7 +51,12 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                className={cn(
+                  "text-sm font-medium transition-colors",
+                  isScrolled 
+                    ? "text-muted-foreground hover:text-foreground" 
+                    : "text-white/70 hover:text-white"
+                )}
               >
                 {item.label}
               </Link>
@@ -57,7 +65,12 @@ export function Header() {
               href="https://wa.me/+573003446228?text=Estoy%20interesado%20en%20alguno%20de%20los%20servicios."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 bg-foreground text-background text-sm font-medium rounded-sm hover:bg-foreground/90 transition-colors"
+              className={cn(
+                "px-5 py-2.5 text-sm font-medium rounded-sm transition-colors",
+                isScrolled
+                  ? "bg-foreground text-background hover:bg-foreground/90"
+                  : "bg-white text-foreground hover:bg-white/90"
+              )}
             >
               Consulta Gratuita
             </Link>
@@ -66,7 +79,10 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground"
+            className={cn(
+              "md:hidden p-2 transition-colors",
+              isScrolled ? "text-foreground" : "text-white"
+            )}
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

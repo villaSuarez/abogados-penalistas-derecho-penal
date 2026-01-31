@@ -1,19 +1,23 @@
-import { CheckCircle } from "lucide-react"
+import { CheckCircle, Scale, Shield, Users, Award } from "lucide-react"
 
 const values = [
   {
+    icon: Scale,
     title: "Compromiso",
     description: "Dedicación total a cada caso, tratando cada situación como si fuera propia.",
   },
   {
+    icon: Award,
     title: "Experiencia",
     description: "Años de práctica en el sistema penal colombiano nos respaldan.",
   },
   {
+    icon: Shield,
     title: "Confidencialidad",
     description: "Absoluta discreción en el manejo de la información de nuestros clientes.",
   },
   {
+    icon: Users,
     title: "Resultados",
     description: "Enfoque estratégico orientado a obtener los mejores resultados posibles.",
   },
@@ -58,8 +62,11 @@ export function About() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="bg-muted/50 border border-border rounded-sm p-6"
+                className="group bg-muted/50 border border-border rounded-sm p-6 hover:border-foreground/20 transition-colors"
               >
+                <div className="w-10 h-10 flex items-center justify-center bg-foreground/10 rounded-sm mb-4 group-hover:bg-foreground group-hover:text-background transition-colors">
+                  <value.icon size={20} />
+                </div>
                 <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                   {value.title}
                 </h3>
