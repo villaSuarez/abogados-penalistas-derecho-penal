@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero"
 import { Specialties } from "@/components/specialties"
 import { About } from "@/components/about"
 import { Hearings } from "@/components/hearings"
+import { Testimonials } from "@/components/testimonials"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
@@ -16,6 +17,7 @@ export default function Home() {
         <Specialties />
         <About />
         <Hearings />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />
