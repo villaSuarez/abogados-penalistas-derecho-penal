@@ -2,6 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Phone } from "lucide-react"
 
+const profileImagePath = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/perfil-diana.jpeg`
+
 export function Hero() {
   return (
     <section
@@ -79,7 +81,7 @@ export function Hero() {
             <div className="relative">
               <div className="absolute -inset-4 bg-white/10 rounded-full blur-3xl" />
               <Image
-                src="/perfil-diana.jpeg"
+                src={profileImagePath}
                 alt="Diana Villa Suárez - Abogada Penalista"
                 width={400}
                 height={400}
