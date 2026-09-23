@@ -1,4 +1,4 @@
-import { Phone, Instagram, Facebook, MapPin, ArrowRight } from "lucide-react"
+import { Phone, Instagram, Facebook, Music2, MapPin, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 const contactInfo = [
@@ -19,6 +19,12 @@ const contactInfo = [
     label: "Facebook",
     value: "@villasuarezabogados",
     href: "https://facebook.com/villasuarezabogados",
+  },
+  {
+    icon: Music2,
+    label: "TikTok",
+    value: "@dianasuarez505",
+    href: "https://www.tiktok.com/@dianasuarez505?_r=1&_t=ZS-99xWxtMVStB",
   },
   {
     icon: MapPin,

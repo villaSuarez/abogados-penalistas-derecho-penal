@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center bg-foreground pt-20"
+      className="relative min-h-screen flex items-center bg-foreground pt-20 pb-12 md:pb-16"
     >
       {/* Background overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-black/70" />
