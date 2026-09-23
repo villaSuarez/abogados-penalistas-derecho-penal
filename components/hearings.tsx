@@ -48,11 +48,11 @@ export function Hearings() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="-mx-6 flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-4 md:mx-0 md:grid md:grid-cols-2 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-4">
           {hearings.map((hearing, index) => (
             <div
               key={index}
-              className="border border-background/20 rounded-sm p-6 hover:border-background/40 transition-colors"
+              className="min-w-[82%] snap-start border border-background/20 rounded-sm p-6 hover:border-background/40 transition-colors md:min-w-0"
             >
               <div className="w-10 h-10 flex items-center justify-center border border-background/30 rounded-sm mb-5">
                 <hearing.icon size={20} className="text-background/80" />

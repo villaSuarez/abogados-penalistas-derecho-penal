@@ -46,11 +46,11 @@ export function Testimonials() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="-mx-6 mb-12 flex snap-x snap-mandatory gap-8 overflow-x-auto px-6 pb-4 md:mx-0 md:grid md:grid-cols-3 md:overflow-visible md:px-0 md:pb-0">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-background border border-border rounded-sm p-8 relative group hover:border-foreground/20 transition-colors"
+              className="relative min-w-[85%] snap-start bg-background border border-border rounded-sm p-8 group hover:border-foreground/20 transition-colors md:min-w-0"
             >
               {/* Quote Icon */}
               <div className="absolute -top-4 left-8">

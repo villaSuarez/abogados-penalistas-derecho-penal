@@ -52,11 +52,11 @@ export function Specialties() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="-mx-6 flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-4 md:mx-0 md:grid md:grid-cols-3 md:overflow-visible md:px-0 md:pb-0">
           {specialties.map((specialty, index) => (
             <div
               key={index}
-              className="group bg-card border border-border rounded-sm p-8 hover:border-foreground/20 transition-colors"
+              className="group min-w-[85%] snap-start bg-card border border-border rounded-sm p-8 hover:border-foreground/20 transition-colors md:min-w-0"
             >
               <div className="w-12 h-12 flex items-center justify-center bg-muted rounded-sm mb-6 group-hover:bg-foreground group-hover:text-background transition-colors">
                 <specialty.icon size={24} />
