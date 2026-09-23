@@ -42,7 +42,7 @@ export function Contact() {
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6 md:mb-8 max-w-lg">
               No esperes más. Cada momento cuenta cuando se trata de tu libertad.
-              Contáctanos ahora para una consulta gratuita y confidencial.
+              Contáctanos ahora para una consulta inmediata y confidencial.
             </p>
 
             <Link

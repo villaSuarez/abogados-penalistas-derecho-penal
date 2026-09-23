@@ -73,7 +73,7 @@ export function Header() {
                   : "bg-white text-foreground hover:bg-white/90"
               )}
             >
-              Consulta Gratuita
+              Consulta Inmediata
             </Link>
           </nav>
 
@@ -110,7 +110,7 @@ export function Header() {
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 bg-foreground text-background text-sm font-medium rounded-sm hover:bg-foreground/90 transition-colors text-center mt-2"
               >
-                Consulta Gratuita
+                Consulta Inmediata
               </Link>
             </div>
           </nav>

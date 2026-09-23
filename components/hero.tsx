@@ -36,7 +36,7 @@ export function Hero() {
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-foreground font-medium rounded-sm hover:bg-white/90 transition-colors"
               >
                 <Phone size={18} />
-                Consulta Gratuita
+                Consulta Inmediata
               </Link>
               <Link
                 href="#especialidades"

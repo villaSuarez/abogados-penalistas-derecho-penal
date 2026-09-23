@@ -47,7 +47,7 @@ export function About() {
             </p>
 
             <div className="flex flex-col gap-4">
-              {["Atención personalizada 24/7", "Primera consulta gratuita", "Estrategias de defensa efectivas"].map(
+              {["Atención personalizada 24/7", "Consulta inmediata", "Estrategias de defensa efectivas"].map(
                 (item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle size={20} className="text-foreground" />
