@@ -30,17 +30,17 @@ const contactInfo = [
 
 export function Contact() {
   return (
-    <section id="contacto" className="py-24 md:py-32 bg-muted/30">
+    <section id="contacto" className="py-16 md:py-32 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <p className="text-sm font-medium text-muted-foreground tracking-widest uppercase mb-4">
               Contacto
             </p>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6 text-balance">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-4 md:mb-6 text-balance">
               Hablemos de tu caso
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-8 max-w-lg">
+            <p className="text-muted-foreground leading-relaxed mb-6 md:mb-8 max-w-lg">
               No esperes más. Cada momento cuenta cuando se trata de tu libertad.
               Contáctanos ahora para una consulta gratuita y confidencial.
             </p>

@@ -33,9 +33,9 @@ const hearings = [
 
 export function Hearings() {
   return (
-    <section id="audiencias" className="py-24 md:py-32 bg-foreground text-background">
+    <section id="audiencias" className="py-16 md:py-32 bg-foreground text-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-2xl mx-auto text-center mb-16">
+        <div className="max-w-2xl mx-auto text-center mb-10 md:mb-16">
           <p className="text-sm font-medium text-background/60 tracking-widest uppercase mb-4">
             Procedimientos legales
           </p>

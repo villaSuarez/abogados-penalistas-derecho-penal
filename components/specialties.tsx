@@ -37,9 +37,9 @@ const specialties = [
 
 export function Specialties() {
   return (
-    <section id="especialidades" className="py-24 md:py-32 bg-muted/30">
+    <section id="especialidades" className="py-16 md:py-32 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="max-w-2xl mx-auto text-center mb-16">
+        <div className="max-w-2xl mx-auto text-center mb-10 md:mb-16">
           <p className="text-sm font-medium text-muted-foreground tracking-widest uppercase mb-4">
             Áreas de práctica
           </p>

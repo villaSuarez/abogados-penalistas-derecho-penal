@@ -25,22 +25,22 @@ const values = [
 
 export function About() {
   return (
-    <section className="py-24 md:py-32 bg-background">
+    <section className="py-16 md:py-32 bg-background">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <p className="text-sm font-medium text-muted-foreground tracking-widest uppercase mb-4">
               Sobre nosotros
             </p>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6 text-balance">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-4 md:mb-6 text-balance">
               Defensa legal con compromiso y excelencia
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="text-muted-foreground leading-relaxed mb-4 md:mb-6">
               En Villa Suárez Abogados entendemos que enfrentar un proceso penal es una 
               de las situaciones más difíciles que puede atravesar una persona. Por eso, 
               nos dedicamos a brindar una defensa integral, humana y efectiva.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
+            <p className="text-muted-foreground leading-relaxed mb-6 md:mb-8">
               Nuestro equipo está comprometido con la justicia y la protección de los 
               derechos de nuestros clientes, utilizando todas las herramientas legales 
               disponibles para garantizar el mejor resultado posible en cada caso.
@@ -62,12 +62,12 @@ export function About() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="group bg-muted/50 border border-border rounded-sm p-6 hover:border-foreground/20 transition-colors"
+                className="group min-w-0 bg-muted/50 border border-border rounded-sm p-6 hover:border-foreground/20 transition-colors"
               >
                 <div className="w-10 h-10 flex items-center justify-center bg-foreground/10 rounded-sm mb-4 group-hover:bg-foreground group-hover:text-background transition-colors">
                   <value.icon size={20} />
                 </div>
-                <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
+                <h3 className="font-serif text-lg font-semibold text-foreground mb-2 break-words">
                   {value.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

@@ -29,10 +29,10 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonios" className="py-20 md:py-28 bg-muted/30">
+    <section id="testimonios" className="py-16 md:py-28 bg-muted/30">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <p className="text-sm font-medium text-muted-foreground tracking-widest uppercase mb-4">
             Testimonios
           </p>
@@ -50,10 +50,10 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="relative min-w-[85%] snap-start bg-background border border-border rounded-sm p-8 group hover:border-foreground/20 transition-colors md:min-w-0"
+              className="relative min-w-[85%] snap-start bg-background border border-border rounded-sm p-8 pt-12 group hover:border-foreground/20 transition-colors md:min-w-0"
             >
               {/* Quote Icon */}
-              <div className="absolute -top-4 left-8">
+              <div className="absolute top-4 left-8">
                 <div className="w-8 h-8 bg-foreground rounded-full flex items-center justify-center">
                   <Quote size={14} className="text-background" />
                 </div>
